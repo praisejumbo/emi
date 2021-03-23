@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+            height: 500px;
+            width: 500px;
+            align-self: center;
+        }
+        input[type=text], select{
+            width: 100%;
+            margin: 8px 0;
+            padding: 12px 20px;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type=submit]{
+            width: 100%;
+            background-color: violet;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type=submit]:hover{
+            background-color: #45a049;
+        }
+        h1{
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <div>
+        <h1>Login</h1>
+        <form action="">
+            <fieldset>
+                <legend>You are welcome to my page</legend>
+            <label for="name">First Name</label>
+            <input type="text" name="first name " placeholder="enter your first name ">
+        
+            <label for="lastname"> Last Name</label>
+            <input type="text" name="first name " placeholder="enter your last name ">
+
+
+            <label for="country">Country</label>
+                <select name="country" id="">
+                <option value="Nigeria">Nigeria</option>
+                <option value="Nigeria">France</option>
+                <option value="Nigeria">Benue</option>
+                <option value="Nigeria">Nigeria</option>
+                <option value="Nigeria">Nigeria</option>
+            </select>
+            <input type="submit" value="Submit" onclick="alert('thank you')">
+        </fieldset>
+
+        <fieldset>
+            <legend>upload your result here</legend>
+            <input type="text" type="file" name="myfile">
+        </fieldset>
+        </form>
+    </div>
+    
+
+
+
+
+
+    
+</body>
+</html>

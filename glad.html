@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        ul{
+            display: inline;
+            list-style-type: none;
+            overflow: hidden;
+            background-color:black;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            border: 1px solid #e7e7e7;
+        }
+            
+        
+        li a{
+            display: block;
+            text-align: center;
+            padding: 10px 12px;
+            color: white;
+            text-decoration: none;
+            background-color: black;
+            margin-left: 50px;
+
+        }
+        li{
+            float: left;
+            display: inline;
+            border-right: 1px solid #bbb;
+        }
+      
+li a:hover{
+    background-color: gray;
+    margin-left: 50px;
+}
+img{
+    height: 30px;
+    width: 100px;
+}
+      
+    </style>
+</head>
+<body>
+    <ul>
+       
+        <li><a href="#Home"> Home</a></li>
+        <li><a href="#Home"> About</a></li>
+        <li><a href="#Home"> Contact</a></li>
+        <li class="dropdown"><a href="Home"> Gallery</a></li>
+        <img src="bbc.png" alt="">
+    </ul>
+</body>
+</html>

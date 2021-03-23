@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+        }
+        /* body{
+            background-image: url(lapi.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            color: white
+            ;
+        } */
+        ul{
+            list-style-type: none;
+            background-color: black;
+            margin: 0px;
+            padding: 0px;
+            overflow: hidden;
+            color: white;
+        }
+        li{
+            float: left;
+        }
+        li a {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        li a :hover{
+            background-color: violet;
+            
+        }
+        .active{
+            background-color: red;
+        }
+        .dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+        .dropdown{
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content{
+            display: none;
+            position: absolute;
+            background-color: cadetblue;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px opx violet;
+            padding: 12px 16px;
+            z-index: 1;
+        }
+        .dropdown:hover .dropdown-content{
+            display: block;
+        }
+        .dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+    }
+    </style>
+</head>
+<body>
+   <ul>
+       <li><a href="#home" class="active"></a>home</li>
+       <li><a href="#contact" ></a>contact</li>
+       <li><a href="#about" ></a>about</li>
+       <li><a href="#gallery" ></a>gallery</li>
+   </ul> 
+
+   <form action="he">
+       <fieldset>
+    <legend>login info</legend>
+       Name <br>
+       <input type="text" value="name" placeholder="enter name">
+       <br>
+       LastName <br>
+       <input type="text">
+       <br><br>
+       <input type="submit" value="submit">
+    </fieldset>
+   </form>
+
+
+
+<h1>why</h1>
+    <div class="dropdown">
+        <button class="dropbtn"> dropdown</button>
+            <span>lap</span>
+        <div class="dropdown-content">
+                <p>hello you</p>
+                <p>hello you</p>
+                <p>hello you</p>
+                <p>hello you</p>
+                <p>hello you</p>
+         </div>
+    </div>
+</body>
+</html>
