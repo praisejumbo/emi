@@ -3,7 +3,7 @@ const fs = require("fs"); // file system
 const path = require("path");
 const mime = require("mime");
 
-// const parse = path.parse("C:/Users/Micah/Documents/code/node_class/main.js");
+// const parse = path.parse("C:/Users/EmmanuelJumbo/Desktop/class/main.js");
 
 // console.log(parse);
 
@@ -22,9 +22,9 @@ const server = http.createServer(function (req, res) {
         return res.end("File Not Found");
       }
 
-      const content = fs.readFile(pathToFile);
+      const content = fs.readFileSync(pathToFile);
       // console.log(content);
-      const contentType = mime.lookup(pathToFile);
+      const contentType = mime.getType(pathToFile);
       res.setHeader("Content-Type", contentType);
       res.end(content);
 
