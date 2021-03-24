@@ -44,4 +44,7 @@ const server = http.createServer(function (req, res) {
   console.log(res.statusCode, req.method, req.url);
 });
 
-server.listen(8080);
+const port = process.env.PORT || 8080;
+server.listen(PORT, function);
+console.log('server running on port ${PORT}');
+});
