@@ -11,13 +11,15 @@
     "type": "git",
     "url": "git+https://github.com/praisejumbo/emi.git"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Emmanuel",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/praisejumbo/emi/issues"
   },
   "homepage": "https://github.com/praisejumbo/emi#readme",
   "dependencies": {
+    "express": "^4.17.1",
     "mime": "^2.5.2"
-  }
+  },
+  "devDependencies": {}
 }
