@@ -5,12 +5,17 @@ var dt = require('./class');
 
 
 http.createServer(function (req, res) {
-    res.writeHead(200, {'Content-Type': 'text/html'});
-    res.write("The date and time are currently: " + dt.myDateTime());
+    
     res.end('Hello World!');
 
 
     exports.myDateTime = function () {
         return Date();
     }; 
+
+
+    app.get("/", function (req,res,){
+
+        res.send("this is an example of routing using the get method");
+      })
 }).listen(8080);
