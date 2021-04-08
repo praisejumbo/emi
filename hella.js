@@ -1,7 +1,7 @@
 const http = require("http");
 const express = require('express')
 const app = express()
-const port = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3000;
 // var fs = require('fs')
 const path = require("path");
 // const addReqUser = require("./");
@@ -97,7 +97,7 @@ app.post("/contact", (req, res)=> {
 });
 
 
-app.listen(3000, function () {
+app.listen(PORT, function () {
   console.log("server is runing")
 });
 
